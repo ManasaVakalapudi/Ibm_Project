@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./assets/css/nav.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fitness Flyers - Obesity</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <style>
+      body{margin-top:20px;}
+.home-blog {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@media (min-width: 992px) {
+    .home-blog {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+.home-blog .section-title {
+    padding-bottom: 15px;
+}
+.home-blog .media {
+    margin-top: 50px;
+}
+@media (min-width: 768px) {
+    .home-blog .media {
+        margin-top: 30px;
+    }
+}
+.bg-sand {
+    background-color: #f5f5f6;
+}
+.media.blog-media {
+    margin-top: 30px;
+    position: relative;
+    display: block;
+}
+@media (min-width: 992px) {
+    .media.blog-media {
+        display: table;
+    }
+}
+.media.blog-media .circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    position: absolute;
+    padding: 0;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    box-shadow: none;
+    transform: translateX(0);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.media.blog-media .circle .day {
+    color: #fff;
+    transition: color 0.25s ease;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    margin-top: 12px;
+}
+.media.blog-media .circle .month {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.media.blog-media > a {
+    position: relative;
+    display: block;
+}
+@media (min-width: 992px) {
+    .media.blog-media > a {
+        display: table-cell;
+        vertical-align: top;
+        min-width: 200px;
+    }
+}
+@media (min-width: 1200px) {
+    .media.blog-media > a {
+        min-width: 230px;
+    }
+}
+.media.blog-media > a:before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.3s ease, opacity 0.3s;
+    background: rgba(12, 198, 82, 0.7);
+}
+.media.blog-media > a img {
+    width: 100%;
+}
+.media.blog-media:hover > a:before {
+    opacity: 1;
+    transform: scale(1);
+}
+.media.blog-media:hover .circle {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.media.blog-media:hover .circle .day,
+.media.blog-media:hover .circle .month {
+    color: #222;
+}
+.media.blog-media:hover .media-body h5 {
+    color: #0cc652;
+}
+.media.blog-media:hover .media-body a.post-link {
+    color: #0cc652;
+    text-decoration: underline;
+}
+.media.blog-media .media-body {
+    border: 1px solid #efeff3;
+    padding: 30px 30px 10px;
+    font-size: 14px;
+    background: #fff;
+    border-top: none;
+}
+@media (min-width: 992px) {
+    .media.blog-media .media-body {
+        padding: 15px 20px 10px;
+        border-top: 1px solid #efeff3;
+        border-left: none;
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+@media (min-width: 1200px) {
+    .media.blog-media .media-body {
+        padding: 30px 20px 10px;
+    }
+}
+.media.blog-media .media-body h5 {
+    transition: color 0.3s ease;
+    margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+    .media.blog-media .media-body h5 {
+        font-size: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    .media.blog-media .media-body h5 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+}
+.media.blog-media .media-body a.post-link {
+    display: block;
+    color: #222;
+    font-size: 11px;
+    padding: 23px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+@media (min-width: 992px) {
+    .media.blog-media .media-body a.post-link {
+        padding: 7px 0;
+    }
+}
+@media (min-width: 1200px) {
+    .media.blog-media .media-body a.post-link {
+        padding: 23px 0;
+    }
+}
+.media.blog-media .media-body ul {
+    position: relative;
+    padding: 10px 0 0;
+}
+.media.blog-media .media-body ul li {
+    display: inline-block;
+    width: 49%;
+    position: relative;
+}
+.media.blog-media .media-body ul li:before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    width: 1px;
+    height: 14px;
+    background: #eeeef2;
+}
+.media.blog-media .media-body ul li:first-child:before {
+    visibility: hidden;
+}
+.media.blog-media .media-body ul:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #eeeef2;
+}
+  </style>
+ 
+  
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header"><!--header-start-->
+    <div class="contain">
+  
+      <div class="header_left">
+         <div class="logo me-auto">
+          <h1><a href="index.html"  ><img src="./assets/img/portfolio/logo2.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"  style="color:black">Fitness Flyers</a></h1>
+         </div>
+      </div>
+      <div class="header_right">
+        <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+        <input id="menuTrigger" type="checkbox" name="">
+        <nav class="main_nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Aboutus.html">About Us</a></li>
+            <li><a href="#">Diet & WorkOuts</a>
+              <i class="fa fa-caret-down"></i>
+              <ul>
+                <li><a href="#">Under Weight</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="./UnderWeight.html">Diet</a></li>
+                    <li><a href="./U_Workouts.html">WorkOuts</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">Over Weight</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="./Overweight.html">Diet</a></li>
+                    <li><a href="./O_Workouts.html">WorkOuts</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Obesity</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="./Obesity.html">Diet</a></li>
+                    <li><a href="./Obes_Workouts.html">WorkOuts</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>    
+      </div>
+    </div>
+  </header><!-- End #header -->
+  <section class="home-blog bg-sand">
+    <div class="container">
+		<!-- section title -->
+		<div class="row justify-content-md-center">
+			<div class="col-xl-5 col-lg-6 col-md-8">
+				<div class="section-title text-center title-ex1">
+					<h2>Diet For Obesity</h2>
+					<!-- <p>Inventore cillum soluta inceptos eos platea, soluta class laoreet repellendus imperdiet optio.</p>
+                    --></div> 
+			</div>
+		</div>
+		<!-- section title ends -->
+		<div class="row ">
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese1.html"><img class="d-flex" src="./images/Obesity/ob1.jpg" style="width:300px;height:260px" alt="Eggs"></a>
+				  <!-- <div class="circle">
+				  	<h5 class="day">08</h5>
+				  	<span class="month">July</span>
+				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese1.html"><h5 class="mt-0">Avocados</h5></a>
+				    avocados are a unique fruit and loaded with healthy fats.....
+				    <a href="./Obesity/obese1.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese2.html"><img class="d-flex" src="./images/Obesity/ob2.jpg"  style="width:300px;height:260px" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+  				  	<h5 class="day">08</h5>
+  				  	<span class="month">July</span>
+  				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese2.html"><h5 class="mt-0">Apple cider vinegar</h5></a>
+				    Apple cider vinegar is incredibly popular in the natural health community....
+				    <a href="./Obesity/obese1.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese3.html"><img class="d-flex" src="./images/Obesity/ob3.jpg"  style="width:300px;height:260px" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+  				  	<h5 class="day">08</h5>
+  				  	<span class="month">July</span>
+  				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese3.html"><h5 class="mt-0">Nuts</h5></a>
+            Despite being high in fat, nuts are not as fattening as you would expect....	  
+                    <a href="./Obesity/obese3.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese4.html"><img class="d-flex"  style="width:300px;height:260px" src="./images/Obesity/ob4.jpg" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+  				  	<h5 class="day">08</h5>
+  				  	<span class="month">July</span>
+  				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese4.html"><h5 class="mt-0">cereal grains</h5></a>
+            Though cereal grains have received a bad reputation in recent years..
+				    <a href="./Obesity/obese4.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+        <div class="row ">
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese5.html"><img  style="width:300px;height:260px" class="d-flex" src="./images/Obesity/ob5.jpg" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+				  	<h5 class="day">08</h5>
+				  	<span class="month">July</span>
+				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese5.html"><h5 class="mt-0">chili peppers</h5></a>
+				    Eating chili peppers may be useful on a weight loss diet....
+				    <a href="./Obesity/obese5.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese6.html"><img class="d-flex" src="./images/Obesity/ob6.jpg"  style="width:300px;height:260px" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+  				  	<h5 class="day">08</h5>
+  				  	<span class="month">July</span>
+  				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese6.html"><h5 class="mt-0">Fruits</h5></a>
+				    Mostly health experts agree that fruit is healthy....
+				    <a href="./Obesity/obese6.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese7.html"><img class="d-flex" src="./images/Obesity/ob7.jpg"  style="width:300px;height:260px" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+  				  	<h5 class="day">08</h5>
+  				  	<span class="month">July</span>
+  				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese7.html"><h5 class="mt-0">Grape Fruit</h5></a>
+				    One fruit that deserves to be highlighted is grapefruit.Its effects on weight control...
+				    <a href="./Obesity/obese7.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+            <div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese8.html"><img class="d-flex" src="./images/Obesity/ob8.jpg"  style="width:300px;height:260px" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+  				  	<h5 class="day">08</h5>
+  				  	<span class="month">July</span>
+  				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese8.html"><h5 class="mt-0">Chia Seeds</h5></a>
+				    Chia seeds are among the most nutritious foods on the planet...
+                  <a href="./Obesity/obese8.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+    <div class="row ">
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese9.html"><img class="d-flex" src="./images/Obesity/ob9.jpg"  style="width:300px;height:260px" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+				  	<h5 class="day">08</h5>
+				  	<span class="month">July</span>
+				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese9.html"><h5 class="mt-0">Coconut</h5></a>
+				    Not all fats are created equal...
+				    <a href="./Obesity/obese9.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="media blog-media">
+				  <a href="./Obesity/obese10.html"><img class="d-flex" src="./images/Obesity/ob10.jpg" style="width:300px;height:260px" alt="Generic placeholder image"></a>
+				  <!-- <div class="circle">
+  				  	<h5 class="day">08</h5>
+  				  	<span class="month">July</span>
+  				  </div> -->
+				  <div class="media-body">
+				    <a href="./Obesity/obese10.html"><h5 class="mt-0">Yogurt</h5></a>
+				    Yogurt is another excellent dairy food...
+				    <a href="./Obesity/obese10.html" class="post-link">Read More</a>
+				  </div>
+				</div>
+			</div>
+	</div>
+</section>
+<section class="home-blog bg-sand">
+    <div class="container">
+    <!-- section title -->
+    <div class="row justify-content-md-center">
+      <div class="col-xl-5 col-lg-6 col-md-8">
+        <div class="section-title text-center title-ex1">
+          <h2>Videos for Diet </h2>
+          <!-- <p>Inventore cillum soluta inceptos eos platea, soluta class laoreet repellendus imperdiet optio.</p>
+        --></div> 
+      </div>
+    </div>
+    <!-- section title ends -->
+    <div class="row ">
+      <div class="col-md-6">
+         
+<iframe width="500" height="360" src="https://www.youtube.com/embed/dvW3vIgCees" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+      <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UCiANdkAuJAiiHCwDf_tJLYg" target="_blank">BuiltLean</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+	 
+	 <blockquote style="font-size:20px;font-weight:bold">
+How Avocados Can Help You Lose Weight & Get Lean
+	  </blockquote>
+	  </div>
+      <div class="col-md-6">
+	  
+<iframe width="500" height="360" src="https://www.youtube.com/embed/8GVZYDOBMXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  
+
+	  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UCc8cHxAZ3jwWkrrDyaLwDUw" target="_blank">DoctorOZ</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+	<blockquote style="font-size:20px;font-weight:bold">
+The Weight Loss Benefits of Apple Cider Vinegar
+	</blockquote>
+		  </div>
+		  
+		  
+		  
+      <div class="col-md-6" style="padding-top: 10px;">
+<iframe width="500" height="360" src="https://www.youtube.com/embed/W-j9qW3Kcgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+		  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UCqnbDFdCpuN8CMEg0VuEBqA" target="_blank">The Newyork Times</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+		
+		<blockquote style="font-size:20px;font-weight:bold">
+ Nuts have been getting a lot of attention as a dieter's best friend. Despite being loaded with fat and calories, studies show that snacking on nuts can cause you to eat less at meals.
+ </blockquote>
+
+	
+		  </div>
+      <div class="col-md-6">
+	  
+	  <iframe width="500" height="360" src="https://www.youtube.com/embed/i6qwYcyOInw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UC4rlAVgAK0SGk-yTfe48Qpw" target="_blank">Bright Side</a></blockquote></p>
+	  
+	<u><cite style="font-weight:bold;">Description</cite></u>
+				<blockquote style="font-size:20px;font-weight:bold">
+
+	What grains should you eat to lose weight? There are grains that are perfect for this, making extra pounds vanish within days. But there are grains that are equally awful for weight loss. We're about to tell you how to avoid all the pitfalls and incorporate grains in your menu to transform your body. 👍
+
+	</blockquote>
+          </div>
+    </div>
+        <div class="row ">
+      <div class="col-md-6">
+	  
+	  <iframe width="500" height="360" src="https://www.youtube.com/embed/ExC6QMQFIlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UC2tg0g4H9h9bDfvuyBGxeRA" target="_blank">CBSN</a></blockquote></p>
+	
+	
+	<u><cite style="font-weight:bold;">Description</cite></u>
+				<blockquote style="font-size:20px;font-weight:bold">
+Researchers say that eating chili peppers may help prevent obesity by stimulating metabolism. Also, a look at the main causes of back pain. Eboni Williams reports on the day's top health news.
+	
+	</blockquote>
+	  </div>
+      <div class="col-md-6">
+	  <iframe width="500" height="360" src="https://www.youtube.com/embed/aGwnMyVNMqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UC6ixzODPAdgVdY9aoSlPPew" target="_blank">EveryDay Health 
+</a></blockquote></p>
+<u><cite style="font-weight:bold;">Description</cite></u>
+				<blockquote style="font-size:20px;font-weight:bold">
+
+When it comes to losing weight, a big challenge for many people is giving up dessert, which is seemingly ubiquitous. Maybe your coworker brought donuts in for the team or candy bars seem to beckon you from the grocery checkout aisle. And, well, when the holidays roll around, all bets are off. It’s like an obstacle course for your goal setting.
+</blockquote>
+
+		
+		</div>
+		
+		
+      <div class="col-md-6">
+	  
+	  <iframe width="500" height="360" src="https://www.youtube.com/embed/RpZyj5tekss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="youtube.com/channel/UCQMskA5rS-SiEfTrr1uD7Tg" target="_blank">Super Food Evolution
+</a></blockquote></p>
+<u><cite style="font-weight:bold;">Description</cite></u>
+				<blockquote style="font-size:20px;font-weight:bold">
+
+Grapefruit juice and the fruit itself has long been claimed to encourage bodyweight reduction, especially when adhering to versions of the "grapefruit diet." But is it all that it's hyped up to be? 
+</blockquote>
+
+          </div>
+      <div class="col-md-6">
+    <iframe width="500" height="360" src="https://www.youtube.com/embed/CVcZTnE2Xv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+	   <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UC4P6iNpG9RhO1eJvocURNxA" target="_blank">Beauty Care
+</a></blockquote></p>
+<u><cite style="font-weight:bold;">Description</cite></u>
+				<blockquote style="font-size:20px;font-weight:bold">
+Didi you know that chia seeds are very helpful in reducing the body fat. If you are looking for healthy way to reduce the weight then you can make the chia seeds drink which will help you to shed at least 10 kg of weight in just 60 days. 
+</blockquote>
+
+	  </div>
+    </div>
+        
+  </div>
+  
+  
+  
+  </section>
+
+<!------------------------------------ VIdeos for Diet Ends here----------------------------->
+
+
+
+<section class="home-blog bg-sand" id="Ob_WOrkouts">
+    <div class="container">
+    <!-- section title -->
+    <div class="row justify-content-md-center">
+      <div class="col-xl-5 col-lg-6 col-md-8">
+        <div class="section-title text-center title-ex1">
+          <h2>WorkOuts For Obesity</h2>
+          <!-- <p>Inventore cillum soluta inceptos eos platea, soluta class laoreet repellendus imperdiet optio.</p>
+        --></div> 
+      </div>
+    </div>
+    <!-- section title ends -->
+    <div class="row ">
+      <div class="col-md-6">
+          <iframe width="500" height="360" src="https://www.youtube.com/embed/Chzhz58JZKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+      
+	    <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UCSpVHeDGr9UbREhRca0qwsA" target="_blank">How Cast</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+	 
+	 <blockquote style="font-size:20px;font-weight:bold">
+What to Eat If You're Obese | Obesity
+	  </blockquote>
+	
+	  
+	  </div>
+     
+
+	 <div class="col-md-6">
+          <iframe width="500" height="360" src="https://www.youtube.com/embed/Tb1mGlZrnRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UC1Sq4WjzZltmWr7Tp32Ig3Q" target="_blank">Yash Homeopathic Center Jodhpur</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+	 
+	 <blockquote style="font-size:20px;font-weight:bold">
+Best Diet to Lose Weight | Diet Plan to reduce Obesity | Best Homeopathy Doctor
+	  </blockquote>
+	
+
+      </div>
+     
+
+
+	 <div class="col-md-6" style="padding-top: 10px;">
+          <iframe width="500" height="360" src="https://www.youtube.com/embed/DPnlPt4EFSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UCfp5MBK2IC90Bdm5IQUJvYw" target="_blank">Michigan Medicine</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+	 
+	 <blockquote style="font-size:20px;font-weight:bold">
+A visual breakdown of why some individuals are resistant to maintaining weight loss through diet and exercise alone.	  </blockquote>
+	
+
+      </div>
+    
+
+
+	<div class="col-md-6">
+          <iframe width="500" height="360" src="https://www.youtube.com/embed/oby6cKTkMQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UC1yBKRuGpC1tSM73A0ZjYjQ" target="_blank">The Young Turks</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+	 
+	 <blockquote style="font-size:20px;font-weight:bold">
+Will New Food Label Help Fight Obesity?
+	  </blockquote>
+	
+
+      </div>
+    </div>
+    
+
+    <div class="row ">
+      <div class="col-md-6">
+          <iframe width="500" height="360" src="https://www.youtube.com/embed/BUwl0Nzh7wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+
+
+  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UCX9O7iJumYyptL89Vx8LR-w" target="_blank">All Health Go</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+	 
+	 <blockquote style="font-size:20px;font-weight:bold">
+Treatment for Severely Obese People
+	  </blockquote>
+	
+       </div>
+    
+
+
+	<div class="col-md-6">
+          <iframe width="500" height="360" src="https://www.youtube.com/embed/iQUJ1HV0PWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+  <p><blockquote style="font-size:20px;font-weight:bold">CopyRights @<a href="https://www.youtube.com/channel/UC-_aWEhUBpH86D1VR0OhVrw" target="_blank">Medical Centric</a></blockquote></p>
+	<u><cite style="font-weight:bold;">Description</cite></u>
+	 
+	 <blockquote style="font-size:20px;font-weight:bold">
+Obesity, Causes, SIgns and Symptoms, Diagnosis and Treatment.
+	  </blockquote>
+	
+
+
+      </div>
+    
+
+	 
+    </div>
+        
+  </div>
+  </section>
+
+  
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright &nbsp;&nbsp;&nbsp;<strong><span><img src="assets/img/portfolio/logo2.jpg" style="height:30px">&nbsp;&nbsp;&nbsp;&nbsp;Fitness Flyers</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS F-->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
